@@ -20,7 +20,7 @@ read -p "Paste Ngrok Authtoken: " CRP
 ./ngrok authtoken $CRP 
 
 clear
-echo "Repo: https://github.com/akayfcom/phordpwin10"
+echo "Tutorial: https://youtu.be/FblFJWodUoY"
 echo "======================="
 echo "choose ngrok region (for better connection)."
 echo "======================="
