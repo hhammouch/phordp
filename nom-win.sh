@@ -3,17 +3,13 @@ chmod +x ng.sh
 ./ng.sh
 
 
-function goto
-{
-    label=$1
-    cd 
-    cmd=$(sed -n "/^:[[:blank:]][[:blank:]]*${label}/{:a;n;p;ba};" $0 | 
-          grep -v ':$')
-    eval "$cmd"
+function goto_ngrok {
+    clear
+    echo "Ngrok Error! Please try again!"
+    sleep 1
+    ./ng.sh
     exit
 }
-
-: ngrok
 clear
 echo "Go to: https://dashboard.ngrok.com/get-started/your-authtoken"
 read -p "Paste Ngrok Authtoken: " CRP
