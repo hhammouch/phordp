@@ -2,6 +2,7 @@ wget -O ng.sh https://raw.githubusercontent.com/hhammouch/phordp/master/ngrok.sh
 chmod +x ng.sh
 ./ng.sh
 
+
 function goto
 {
     label=$1
@@ -17,7 +18,6 @@ clear
 echo "Go to: https://dashboard.ngrok.com/get-started/your-authtoken"
 read -p "Paste Ngrok Authtoken: " CRP
 ./ngrok config add-authtoken $CRP 
-
 clear
 echo "Tutorial: https://youtu.be/FblFJWodUoY"
 echo "======================="
